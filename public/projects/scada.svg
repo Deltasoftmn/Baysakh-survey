@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#091945"/>
+      <stop offset="1" stop-color="#0E2F7A"/>
+    </linearGradient>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1060 300) rotate(15) scale(760 520)">
+      <stop stop-color="#F57E20" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#F57E20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="28" fill="url(#g)"/>
+  <rect width="1600" height="1000" rx="28" fill="url(#a)"/>
+  <g opacity="0.22">
+    <path d="M240 120V880" stroke="#fff" stroke-opacity="0.10"/>
+    <path d="M520 120V880" stroke="#fff" stroke-opacity="0.08"/>
+    <path d="M800 120V880" stroke="#fff" stroke-opacity="0.06"/>
+    <path d="M1080 120V880" stroke="#fff" stroke-opacity="0.05"/>
+    <path d="M1360 120V880" stroke="#fff" stroke-opacity="0.04"/>
+  </g>
+  <g opacity="0.92">
+    <path d="M0 760C230 680 420 710 650 648C880 586 1080 602 1280 546C1420 506 1520 490 1600 465V1000H0V760Z" fill="#07153D"/>
+    <path d="M300 300h520v320H300V300Z" fill="#fff" fill-opacity="0.08"/>
+    <path d="M340 340h440v34H340v-34Z" fill="#F57E20" fill-opacity="0.22"/>
+    <path d="M340 402h200v20H340v-20Z" fill="#fff" fill-opacity="0.12"/>
+    <path d="M340 440h360v20H340v-20Z" fill="#fff" fill-opacity="0.10"/>
+    <path d="M340 478h280v20H340v-20Z" fill="#fff" fill-opacity="0.10"/>
+    <path d="M340 516h400v20H340v-20Z" fill="#fff" fill-opacity="0.09"/>
+  </g>
+</svg>
+

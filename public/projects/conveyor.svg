@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07153D"/>
+      <stop offset="1" stop-color="#10378C"/>
+    </linearGradient>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1120 260) rotate(20) scale(760 520)">
+      <stop stop-color="#F57E20" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#F57E20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="28" fill="url(#g)"/>
+  <rect width="1600" height="1000" rx="28" fill="url(#a)"/>
+  <g opacity="0.92">
+    <path d="M0 780C250 690 450 712 690 654C930 596 1110 602 1340 548C1460 518 1540 500 1600 484V1000H0V780Z" fill="#07153D"/>
+    <path d="M260 520h1000l-54 150H206l54-150Z" fill="#fff" fill-opacity="0.06"/>
+    <path d="M320 560h880l-20 56H340l-20-56Z" fill="#F57E20" fill-opacity="0.20"/>
+    <path d="M1080 370h260v160h-260V370Z" fill="#fff" fill-opacity="0.07"/>
+    <path d="M1120 410h180v18h-180v-18Z" fill="#fff" fill-opacity="0.12"/>
+  </g>
+  <g opacity="0.22">
+    <path d="M0 240H1600" stroke="#fff" stroke-opacity="0.12"/>
+    <path d="M0 460H1600" stroke="#fff" stroke-opacity="0.10"/>
+    <path d="M0 680H1600" stroke="#fff" stroke-opacity="0.08"/>
+  </g>
+</svg>
+
