@@ -17,11 +17,16 @@ export function SectionHeading({
         <span className="size-1.5 rounded-full bg-[rgb(var(--accent))]" />
         {kicker}
       </div>
-      <h2 className="mt-4 text-balance font-[var(--font-condensed)] text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+      <h2 className="mt-4 text-balance font-[var(--font-condensed)] text-2xl font-bold tracking-tight text-slate-900 sm:text-4xl">
         {title}
       </h2>
       {body ? (
-        <p className={cn("mt-4 max-w-3xl text-base leading-relaxed text-slate-600", align === "center" ? "mx-auto" : "")}>
+        <p
+          className={cn(
+            "mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 sm:mt-4 sm:text-base",
+            align === "center" ? "mx-auto" : ""
+          )}
+        >
           {body}
         </p>
       ) : null}

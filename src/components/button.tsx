@@ -15,7 +15,7 @@ export function Button({
   variant?: Variant;
 }) {
   const base =
-    "inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold tracking-wide transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[rgb(var(--accent))] focus-visible:ring-offset-2";
+    "inline-flex items-center justify-center gap-2 rounded-md px-4 py-2.5 text-sm font-semibold tracking-wide transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[rgb(var(--accent))] focus-visible:ring-offset-2 sm:px-5 sm:py-3";
 
   const styles: Record<Variant, string> = {
     primary:

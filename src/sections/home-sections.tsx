@@ -24,7 +24,7 @@ export function HeroSection({ copy }: { copy: SiteCopy }) {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/35 via-black/35 to-[rgb(var(--brand-2))]" />
       <div className="absolute inset-0 -z-10 opacity-60 bg-[radial-gradient(900px_360px_at_18%_18%,rgba(245,126,32,0.22),transparent_60%)]" />
 
-      <Container className="min-h-[92vh] pt-28 sm:pt-32 lg:pt-36">
+      <Container className="min-h-[88vh] pt-24 sm:min-h-[92vh] sm:pt-32 lg:pt-36">
         <div className="grid items-end gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-7">
             <Reveal>
@@ -34,12 +34,12 @@ export function HeroSection({ copy }: { copy: SiteCopy }) {
               </div>
             </Reveal>
             <Reveal delay={0.08}>
-              <h1 className="mt-5 text-balance font-[var(--font-condensed)] text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 className="mt-5 text-balance font-[var(--font-condensed)] text-[28px] font-bold leading-[1.05] tracking-tight text-white sm:text-5xl sm:leading-[1.05] lg:text-6xl">
                 {copy.hero.headline}
               </h1>
             </Reveal>
             <Reveal delay={0.14}>
-              <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
+              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/75 sm:mt-5 sm:text-lg">
                 {copy.hero.subheadline}
               </p>
             </Reveal>
@@ -59,7 +59,7 @@ export function HeroSection({ copy }: { copy: SiteCopy }) {
 
           <div className="lg:col-span-5">
             <Reveal delay={0.1}>
-              <div className="rounded-2xl bg-white/6 p-5 ring-1 ring-white/12 backdrop-blur">
+              <div className="rounded-2xl bg-white/6 p-4 ring-1 ring-white/12 backdrop-blur sm:p-5">
                 <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
                   {copy.about.stats.map((s) => (
                     <div
@@ -104,7 +104,7 @@ export function AboutSection({ copy }: { copy: SiteCopy }) {
           <div className="lg:col-span-7">
             <div className="grid auto-rows-fr gap-5 sm:grid-cols-2">
               <Reveal delay={0.05}>
-                <div className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_10px_35px_-20px_rgba(2,6,23,0.35)]">
+                <div className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_10px_35px_-20px_rgba(2,6,23,0.35)] sm:p-6">
                   <div className="flex items-center gap-3">
                     <div className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--brand))]/10 text-[rgb(var(--brand))] ring-1 ring-[rgb(var(--brand))]/15">
                       <Icon name="crosshair" className="size-5" />
@@ -119,7 +119,7 @@ export function AboutSection({ copy }: { copy: SiteCopy }) {
                 </div>
               </Reveal>
               <Reveal delay={0.10}>
-                <div className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_10px_35px_-20px_rgba(2,6,23,0.35)]">
+                <div className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_10px_35px_-20px_rgba(2,6,23,0.35)] sm:p-6">
                   <div className="flex items-center gap-3">
                     <div className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--brand))]/10 text-[rgb(var(--brand))] ring-1 ring-[rgb(var(--brand))]/15">
                       <Icon name="shield-check" className="size-5" />
@@ -136,7 +136,7 @@ export function AboutSection({ copy }: { copy: SiteCopy }) {
             </div>
 
             <Reveal delay={0.08}>
-              <div className="mt-7 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <div className="mt-7 rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:p-6">
                 <div className="grid gap-5 sm:grid-cols-3">
                   {copy.about.stats.map((s) => (
                     <div key={s.label} className="min-w-0">
@@ -173,7 +173,7 @@ export function ServicesSection({ copy }: { copy: SiteCopy }) {
         <div className="mt-10 grid auto-rows-fr gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {copy.services.items.map((s, idx) => (
             <Reveal key={s.title} delay={Math.min(0.18, idx * 0.04)}>
-              <div className="group h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_12px_40px_-26px_rgba(2,6,23,0.35)] transition hover:-translate-y-1 hover:shadow-[0_22px_60px_-34px_rgba(2,6,23,0.45)]">
+              <div className="group h-full rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_12px_40px_-26px_rgba(2,6,23,0.35)] transition hover:-translate-y-1 hover:shadow-[0_22px_60px_-34px_rgba(2,6,23,0.45)] sm:p-6">
                 <div className="flex items-start gap-4">
                   <div className="grid size-12 place-items-center rounded-xl bg-[rgb(var(--brand))]/10 text-[rgb(var(--brand))] ring-1 ring-[rgb(var(--brand))]/15 transition group-hover:bg-[rgb(var(--brand))] group-hover:text-white">
                     <Icon name={s.icon} className="size-6" strokeWidth={1.8} />
@@ -338,7 +338,7 @@ export function EquipmentSection({ copy }: { copy: SiteCopy }) {
               {copy.equipment.items.map((e) => (
                 <div
                   key={e.title}
-                  className="w-[84%] shrink-0 snap-start rounded-2xl border border-slate-200 bg-slate-50 p-6"
+                  className="w-[84%] shrink-0 snap-start rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:p-6"
                 >
                   <div className="flex items-start gap-4">
                     <div className="grid size-11 place-items-center rounded-xl bg-white text-[rgb(var(--brand))] ring-1 ring-black/5">
@@ -392,7 +392,7 @@ export function TeamSection({ copy }: { copy: SiteCopy }) {
             <div className="grid auto-rows-fr gap-5 sm:grid-cols-2">
               {copy.team.items.map((t, idx) => (
                 <Reveal key={t.name} delay={Math.min(0.18, idx * 0.05)}>
-                  <div className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_12px_40px_-26px_rgba(2,6,23,0.35)]">
+                  <div className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_12px_40px_-26px_rgba(2,6,23,0.35)] sm:p-6">
                     <div className="text-xs font-semibold tracking-[0.18em] text-slate-500">
                       {t.role}
                     </div>
@@ -453,7 +453,7 @@ export function ContactSection({ copy }: { copy: SiteCopy }) {
 
         <div className="mt-10 grid gap-6 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:p-6">
               <div className="text-sm font-semibold tracking-wide text-slate-900">
                 {copy.contact.formTitle}
               </div>
@@ -510,7 +510,7 @@ export function ContactSection({ copy }: { copy: SiteCopy }) {
 
           <Reveal className="lg:col-span-5">
             <div className="grid gap-5">
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_12px_40px_-26px_rgba(2,6,23,0.35)]">
+              <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_12px_40px_-26px_rgba(2,6,23,0.35)] sm:p-6">
                 <div className="text-sm font-semibold tracking-wide text-slate-900">
                   {copy.contact.infoTitle}
                 </div>
@@ -547,7 +547,7 @@ export function ContactSection({ copy }: { copy: SiteCopy }) {
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:p-6">
                 <div className="text-sm font-semibold tracking-wide text-slate-900">
                   {copy.contact.mapTitle}
                 </div>
@@ -559,7 +559,7 @@ export function ContactSection({ copy }: { copy: SiteCopy }) {
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-[rgb(var(--brand-2))] p-6 text-white">
+              <div className="rounded-2xl bg-[rgb(var(--brand-2))] p-4 text-white sm:p-6">
                 <div className="text-xs font-semibold tracking-[0.18em] text-white/70">
                   {copy.contact.ctaTitle}
                 </div>
