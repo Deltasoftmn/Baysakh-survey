@@ -247,9 +247,9 @@ const mn: SiteCopy = {
           "Шугам хоолойн трасс, тэнхлэг, өндөржилтийн хяналт, гүйцэтгэлийн зураглал, өгөгдөл боловсруулалт."
       },
       {
-        image: "/projects/ot-ug.jpeg",
+        image: "/projects/ot-ug.jpg",
         images: [
-          "/projects/ot-ug.jpeg",
+          "/projects/ot-ug.jpg",
         ],
         title: "Оюутолгой-Гүний уурхайн бүтээн байгуулалт",
         timeframe: "2017–2022",
