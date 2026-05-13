@@ -10,6 +10,7 @@ export type ServiceItem = {
 
 export type ProjectItem = {
   image: string;
+  images: string[];
   title: string;
   timeframe: string;
   summary: string;
@@ -212,57 +213,166 @@ const mn: SiteCopy = {
     cta: "Дэлгэрэнгүй",
     items: [
       {
-        image: "/projects/buuruljuut.svg",
-        title: "Buuruljuut Power Plant Project",
+        image: "/projects/buuruljuut.jpg",
+        images: [
+          "/projects/buuruljuut.jpg",
+          "/projects/buuruljuut (1).jpg",
+          "/projects/buuruljuut (2).jpg",
+          "/projects/buuruljuut (3).jpg",
+          "/projects/buuruljuut (4).jpg",
+          "/projects/buuruljuut (5).jpg",
+          "/projects/buuruljuut (6).jpg",
+          "/projects/buuruljuut (7).jpg",
+          "/projects/buuruljuut (8).jpg",
+          "/projects/buuruljuut (9).jpg",
+          "/projects/buuruljuut (10).jpg",
+        ],
+        title: "Бөөрөлжүүтийн цахилгаан станцын төсөл",
         timeframe: "2018–2020",
         summary:
           "Талбайн геодезийн суурь тогтолцоо, гүйцэтгэлийн хэмжилт, мониторинг, зураглалын үйлчилгээ."
       },
       {
-        image: "/projects/groundwater.svg",
-        title: "Groundwater Source Well and Pipeline Construction Project",
+        image: "/projects/groundwater.jpg",
+        images: [
+          "/projects/groundwater.jpg",
+          "/projects/groundwater (1).jpg",
+          "/projects/groundwater (2).jpg",
+          "/projects/groundwater (3).jpg",
+          "/projects/groundwater (4).jpg",
+        ],
+        title: "Газар доорх усны эх үүсвэрийн худгууд болон дамжуулах хоолойн барилга угсралтын төсөл",
         timeframe: "2019–2021",
         summary:
           "Шугам хоолойн трасс, тэнхлэг, өндөржилтийн хяналт, гүйцэтгэлийн зураглал, өгөгдөл боловсруулалт."
       },
       {
-        image: "/projects/ot-ug.svg",
-        title: "Oyu Tolgoi Underground Mining Development",
+        image: "/projects/ot-ug.jpg",
+        images: [
+          "/projects/ot-ug.jpg",
+          "/projects/ot-ug (1).jpg",
+          "/projects/ot-ug (2).jpg",
+          "/projects/ot-ug (3).jpg",
+          "/projects/ot-ug (4).jpg",
+          "/projects/ot-ug (5).jpg",
+          "/projects/ot-ug (6).jpg",
+          "/projects/ot-ug (7).jpg",
+          "/projects/ot-ug (8).jpg",
+          "/projects/ot-ug (9).jpg",
+          "/projects/ot-ug (10).jpg",
+          "/projects/ot-ug (11).jpg",
+          "/projects/ot-ug (12).jpg",
+          "/projects/ot-ug (13).jpg",
+          "/projects/ot-ug (14).jpg",
+          "/projects/ot-ug (15).jpg",
+          "/projects/ot-ug (16).jpg",
+          "/projects/ot-ug (17).jpg",
+          "/projects/ot-ug (18).jpg",
+          "/projects/ot-ug (19).jpg",
+          "/projects/ot-ug (20).jpg",
+        ],
+        title: "Оюутолгой-Гүний уурхайн бүтээн байгуулалт",
         timeframe: "2017–2022",
         summary:
           "Уурхайн дэд бүтцийн геодезийн хэмжилт, үйлдвэрлэлийн байгууламжийн байрлал, гүйцэтгэлийн хяналт."
       },
       {
-        image: "/projects/scada.svg",
+        image: "/projects/scada.jpg",
+        images: [
+          "/projects/scada.jpg",
+          "/projects/scada (1).jpg",
+          "/projects/scada (2).jpg",
+          "/projects/scada (3).jpg",
+          "/projects/scada (4).jpg",
+          "/projects/scada (5).jpg",
+          "/projects/scada (6).jpg",
+          "/projects/scada (7).jpg",
+        ],
         title:
-          "Water Transmission System / Thermal Power Plant / SCADA Construction Project",
+          "Ус дамжуулах систем, ДЦС-3, ДЦС-4 ТӨХК дээрх өөрчлөлтийн ажлууд, СКАДА системийн барилга угсралтын ажил",
         timeframe: "2020–2022",
         summary:
           "Инженерийн шугам сүлжээ, байгууламжийн гүйцэтгэлийн зураглал, хяналт-шалгалтын багц ажил."
       },
       {
-        image: "/projects/tt-loading.svg",
-        title: "Tavan Tolgoi Coal Loading Logistics Center Project",
+        image: "/projects/tt-loading.jfif",
+        images: [
+          "/projects/tt-loading.jfif",
+          "/projects/tt-loading (1).jfif",
+          "/projects/tt-loading (2).jfif",
+          "/projects/tt-loading (3).jfif",
+          "/projects/tt-loading (4).jfif",
+          "/projects/tt-loading (5).jfif",
+          "/projects/tt-loading (6).jfif",
+          "/projects/tt-loading (7).jfif",
+          "/projects/tt-loading (8).jfif",
+          "/projects/tt-loading (9).jfif",
+          "/projects/tt-loading (10).jfif",
+          "/projects/tt-loading (11).jfif",
+          "/projects/tt-loading (12).jfif",
+          "/projects/tt-loading (13).jfif",
+          "/projects/tt-loading (14).jfif",
+          "/projects/tt-loading (15).jfif",
+          "/projects/tt-loading (16).jfif",
+          "/projects/tt-loading (17).jfif",
+          "/projects/tt-loading (18).jfif",
+          "/projects/tt-loading (19).jfif",
+          "/projects/tt-loading (20).jfif",
+        ],
+        title: "Тавантолгойн нүүрс ачих логистикийн төв - ТНАЛТ төсөл",
         timeframe: "2019–2020",
         summary:
           "Үйлдвэрлэлийн талбай, агуулах, тээвэрлэлтийн байгууламжийн тэнхлэг шилжүүлэлт, гүйцэтгэл."
       },
       {
-        image: "/projects/railway.svg",
-        title: "Tavantolgoi–Gashuunsukhait Railway Complex Project",
+        image: "/projects/railway.jpg",
+        images: [
+          "/projects/railway.jpg",
+          "/projects/railway (1).jpg",
+          "/projects/railway (2).jpg",
+          "/projects/railway (3).jpg",
+          "/projects/railway (4).jpg",
+          "/projects/railway (5).jpg",
+          "/projects/railway (6).jpg",
+          "/projects/railway (7).jpg",
+          "/projects/railway (8).jpg",
+          "/projects/railway (9).jpg",
+          "/projects/railway (10).jpg",
+          "/projects/railway (11).jpg",
+          "/projects/railway (12).jpg",
+          "/projects/railway (13).jpg",
+          "/projects/railway (14).jpg",
+          "/projects/railway (15).jpg",
+          "/projects/railway (16).jpg",
+          "/projects/railway (17).jpg",
+          "/projects/railway (18).jpg",
+        ],
+        title: "Тавантолгой-Гашуунсухайт чиглэлийн төмөр замын цогцолбор төсөл",
         timeframe: "2020–2023",
         summary:
           "Төмөр замын трасс, газар шорооны ажил, байгууламжийн гүйцэтгэлийн хэмжилт ба зураглал."
       },
       {
-        image: "/projects/rail-connection.svg",
-        title: "Railway connection project",
+        image: "/projects/rail-connection.jpg",
+        images: [
+          "/projects/rail-connection.jpg",
+          "/projects/rail-connection (1).jpg",
+          "/projects/rail-connection (2).jpg",
+          "/projects/rail-connection (3).jpg",
+          "/projects/rail-connection (4).jpg",
+        ],
+        title: "Тавантолгой-Зүүнбаян Тавантолгой-Гашуунсухайт чиглэлийн төмөр замуудыг холбох төмөр замын төсөл",
         timeframe: "2021–2023",
         summary:
           "Трассын хэмжилт, суурь сүлжээ, гүйцэтгэлийн шалгалт, тайлангийн өгөгдлийн боловсруулалт."
       },
       {
         image: "/projects/conveyor.svg",
+        images: [
+          "/projects/conveyor.svg",
+          "/projects/ot-ug.jpg",
+          "/baysakh.1.jpg"
+        ],
         title: "Industrial conveyor / crusher engineering projects",
         timeframe: "2016–2022",
         summary:
@@ -480,28 +590,48 @@ const en: SiteCopy = {
     cta: "Details",
     items: [
       {
-        image: "/projects/buuruljuut.svg",
+        image: "/projects/buuruljuut.jpg",
+        images: [
+          "/projects/buuruljuut.jpg",
+          "/projects/buuruljuut.svg",
+          "/baysakh.1.jpg"
+        ],
         title: "Buuruljuut Power Plant Project",
         timeframe: "2018–2020",
         summary:
           "Control networks, as-built surveys, monitoring, and mapping deliverables for power infrastructure."
       },
       {
-        image: "/projects/groundwater.svg",
+        image: "/projects/groundwater.jpg",
+        images: [
+          "/projects/groundwater.jpg",
+          "/projects/groundwater.svg",
+          "/baysakh.1.jpg"
+        ],
         title: "Groundwater Source Well and Pipeline Construction Project",
         timeframe: "2019–2021",
         summary:
           "Pipeline alignment control, elevation verification, as-built mapping, and processing workflows."
       },
       {
-        image: "/projects/ot-ug.svg",
+        image: "/projects/ot-ug.jpg",
+        images: [
+          "/projects/ot-ug.jpg",
+          "/projects/ot-ug.svg",
+          "/baysakh.1.jpg"
+        ],
         title: "Oyu Tolgoi Underground Mining Development",
         timeframe: "2017–2022",
         summary:
           "Surveying support for mining infrastructure and industrial facility control and verification."
       },
       {
-        image: "/projects/scada.svg",
+        image: "/projects/scada.jpg",
+        images: [
+          "/projects/scada.jpg",
+          "/projects/scada.svg",
+          "/baysakh.1.jpg"
+        ],
         title:
           "Water Transmission System / Thermal Power Plant / SCADA Construction Project",
         timeframe: "2020–2022",
@@ -509,21 +639,38 @@ const en: SiteCopy = {
           "Utility networks and facility as-built deliverables with inspection and reporting."
       },
       {
-        image: "/projects/tt-loading.svg",
+        image: "/projects/tt-loading.jfif",
+        images: [
+          "/projects/tt-loading.jfif",
+          "/projects/tt-loading.svg",
+          "/baysakh.1.jpg"
+        ],
         title: "Tavan Tolgoi Coal Loading Logistics Center Project",
         timeframe: "2019–2020",
         summary:
           "Setting-out and as-built control for logistics and industrial site facilities."
       },
       {
-        image: "/projects/railway.svg",
+        image: "/projects/railway.jpg",
+        images: [
+          "/projects/railway.jpg",
+          "/projects/railway.svg",
+          "/projects/rail-connection.jpg",
+          "/baysakh.1.jpg"
+        ],
         title: "Tavantolgoi–Gashuunsukhait Railway Complex Project",
         timeframe: "2020–2023",
         summary:
           "Rail alignment control, earthworks surveying, structures verification, and mapping."
       },
       {
-        image: "/projects/rail-connection.svg",
+        image: "/projects/rail-connection.jpg",
+        images: [
+          "/projects/rail-connection.jpg",
+          "/projects/rail-connection.svg",
+          "/projects/railway.jpg",
+          "/baysakh.1.jpg"
+        ],
         title: "Railway connection project",
         timeframe: "2021–2023",
         summary:
@@ -531,6 +678,11 @@ const en: SiteCopy = {
       },
       {
         image: "/projects/conveyor.svg",
+        images: [
+          "/projects/conveyor.svg",
+          "/projects/ot-ug.jpg",
+          "/baysakh.1.jpg"
+        ],
         title: "Industrial conveyor / crusher engineering projects",
         timeframe: "2016–2022",
         summary:

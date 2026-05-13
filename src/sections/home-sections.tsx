@@ -9,6 +9,7 @@ import { Icon } from "@/components/icon";
 import { Container, Section } from "@/components/layout";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { GalleryModal } from "@/components/gallery-modal";
 import { cn } from "@/lib/cn";
 
 export function HeroSection({ copy }: { copy: SiteCopy }) {
@@ -19,7 +20,7 @@ export function HeroSection({ copy }: { copy: SiteCopy }) {
     >
       <div
         className="absolute inset-0 -z-10 bg-cover bg-center"
-        style={{ backgroundImage: "url(/banner.png)" }}
+        style={{ backgroundImage: "url(/baysakh.1.jpg)" }}
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/35 via-black/35 to-[rgb(var(--brand-2))]" />
       <div className="absolute inset-0 -z-10 opacity-60 bg-[radial-gradient(900px_360px_at_18%_18%,rgba(245,126,32,0.22),transparent_60%)]" />
@@ -197,6 +198,11 @@ export function ServicesSection({ copy }: { copy: SiteCopy }) {
 }
 
 export function ProjectsSection({ copy }: { copy: SiteCopy }) {
+  const [activeProject, setActiveProject] = React.useState<{
+    title: string;
+    images: string[];
+  } | null>(null);
+
   return (
     <Section id="projects" className="bg-white">
       <Container>
@@ -212,7 +218,10 @@ export function ProjectsSection({ copy }: { copy: SiteCopy }) {
           {copy.projects.items.map((p, idx) => (
             <Reveal key={p.title} delay={Math.min(0.18, idx * 0.04)}>
               <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-900 shadow-[0_20px_70px_-46px_rgba(2,6,23,0.6)]">
-                <div className="relative h-48 sm:h-56">
+                <div 
+                  className="relative h-48 cursor-pointer overflow-hidden sm:h-56"
+                  onClick={() => setActiveProject({ title: p.title, images: p.images })}
+                >
                   <Image
                     src={p.image}
                     alt={p.title}
@@ -234,13 +243,13 @@ export function ProjectsSection({ copy }: { copy: SiteCopy }) {
                         {p.title}
                       </div>
                     </div>
-                    <a
-                      href="#contact"
-                      className="inline-flex shrink-0 items-center gap-2 rounded-md bg-white/10 px-3 py-2 text-xs font-semibold tracking-wide text-white ring-1 ring-white/15 backdrop-blur transition hover:bg-white/15"
+                    <button
+                      onClick={() => setActiveProject({ title: p.title, images: p.images })}
+                      className="inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-md bg-white/10 px-3 py-2 text-xs font-semibold tracking-wide text-white ring-1 ring-white/15 backdrop-blur transition hover:bg-white/15 active:scale-95"
                     >
                       {copy.projects.cta}
                       <ArrowRight className="size-4" />
-                    </a>
+                    </button>
                   </div>
                   <p className="mt-3 text-sm leading-relaxed text-white/75 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3] overflow-hidden">
                     {p.summary}
@@ -251,6 +260,13 @@ export function ProjectsSection({ copy }: { copy: SiteCopy }) {
           ))}
         </div>
       </Container>
+
+      <GalleryModal
+        isOpen={!!activeProject}
+        title={activeProject?.title}
+        images={activeProject?.images || []}
+        onClose={() => setActiveProject(null)}
+      />
     </Section>
   );
 }
