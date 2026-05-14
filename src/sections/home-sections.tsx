@@ -517,7 +517,7 @@ export function ContactSection({ copy }: { copy: SiteCopy }) {
                   </button>
                   <div className="mt-2 text-xs text-slate-500">
                     {copy.contact.emailLabel}:{" "}
-                    <span className="font-semibold">info@example.com</span> (placeholder)
+                    <span className="font-semibold">info@bayasakhsurvey.mn</span> 
                   </div>
                 </div>
               </form>
@@ -538,7 +538,7 @@ export function ContactSection({ copy }: { copy: SiteCopy }) {
                         {copy.contact.addressLabel}
                       </div>
                       <div className="mt-1">
-                        Ulaanbaatar, Mongolia (placeholder)
+                       Suite 302, Suvd Center 34, Juulchnii Street, 3rd khoroo, Chingeltei District, Ulaanbaatar, Mongolia
                       </div>
                     </div>
                   </div>
@@ -548,7 +548,7 @@ export function ContactSection({ copy }: { copy: SiteCopy }) {
                       <div className="text-xs font-semibold tracking-[0.18em] text-slate-500">
                         {copy.contact.phoneLabel}
                       </div>
-                      <div className="mt-1">+976 0000 0000 (placeholder)</div>
+                      <div className="mt-1">+976 99032682 89059019</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
