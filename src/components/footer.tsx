@@ -53,9 +53,9 @@ export function Footer({ copy }: { copy: SiteCopy }) {
             </FooterCol>
             <FooterCol title={copy.footer.contact}>
               <div className="text-sm text-slate-600">
-                <div>Ulaanbaatar, Mongolia (placeholder)</div>
-                <div className="mt-2">+976 0000 0000 (placeholder)</div>
-                <div className="mt-2">info@example.com (placeholder)</div>
+                <div>Suite 302, Suvd Center 34, Juulchnii Street, 3rd khoroo, Chingeltei District, Ulaanbaatar, Mongolia</div>
+                <div className="mt-2">+976 99032682 89059019</div>
+                <div className="mt-2">info@bayasakhsurvey.mn</div>
               </div>
               <a
                 href="#contact"
