@@ -557,7 +557,7 @@ export function ContactSection({ copy }: { copy: SiteCopy }) {
                       <div className="text-xs font-semibold tracking-[0.18em] text-slate-500">
                         {copy.contact.emailLabel}
                       </div>
-                      <div className="mt-1">info@example.com (placeholder)</div>
+                      <div className="mt-1">info@bayasakhsurvey.mn</div>
                     </div>
                   </div>
                 </div>
@@ -570,9 +570,9 @@ export function ContactSection({ copy }: { copy: SiteCopy }) {
                 <div className="mt-4 overflow-hidden rounded-xl border border-slate-200 bg-white">
                   <div className="bg-grid h-48 w-full bg-white" />
                 </div>
-                <div className="mt-3 text-xs text-slate-500">
+                {/* <div className="mt-3 text-xs text-slate-500">
                   Google Maps embed placeholder (static site).
-                </div>
+                </div> */}
               </div>
 
               <div className="rounded-2xl bg-[rgb(var(--brand-2))] p-4 text-white sm:p-6">
